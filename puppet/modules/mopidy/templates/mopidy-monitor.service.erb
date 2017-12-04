@@ -1,0 +1,8 @@
+[Unit]
+Description=Mopidy Check service
+After=mopidy.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mopidy-cli resume-radio
+User=mopidy
